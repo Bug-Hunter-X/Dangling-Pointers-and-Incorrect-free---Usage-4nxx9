@@ -1,0 +1,1 @@
+int main() {    int *ptr = (int *)malloc(sizeof(int));    if (ptr == NULL) {        // Handle memory allocation failure        return 1;    }    *ptr = 20;    printf("%d", *ptr); // Output: 20    free(ptr);    ptr = NULL; // Good practice to set ptr to NULL after freeing     return 0;} 
